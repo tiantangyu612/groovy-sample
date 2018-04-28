@@ -1,0 +1,4 @@
+moduleName=price-module
+moduleVersion=1.0-test
+extensionClasses=me.flyness.groovy.overview.gdk.PriceExtension
+staticExtensionClasses=me.flyness.groovy.overview.gdk.PriceStaticExtension
