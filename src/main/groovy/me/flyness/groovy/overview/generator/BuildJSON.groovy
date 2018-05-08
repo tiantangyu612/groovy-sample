@@ -17,3 +17,17 @@ bldr = new JsonBuilder(john)
 writer = new StringWriter()
 bldr.writeTo(writer)
 println writer
+
+bldr = new JsonBuilder()
+bldr{
+    firstName john.first
+    lastName john.last
+    "special interest groups" john.sigs
+    "preferred tools" {
+        numberOfTools john.tools.size()
+        tools john.tools
+    }
+}
+writer = new StringWriter()
+bldr.writeTo(writer)
+println writer
